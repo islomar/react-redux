@@ -17,7 +17,8 @@ http://cursos.carlosazaustre.es/courses/enrolled/react-js
 * También existe ES2016 y ES2017.
 * Si quieres todo (ES2015, ES2016, ES2017), existe el preset "latest" (así tienes todo lo nuevo).
 
-##Pasos
+
+##webpack
 1. `npm init`
   * Genera un `package.json`
 2. Instalamos las dependencias
@@ -53,4 +54,9 @@ http://cursos.carlosazaustre.es/courses/enrolled/react-js
 8. Run `npm start`: indicará que no encuentra el fichero .jsx, y acabará con un **Bundle is now VALID**
     * Habrá generado una carpeta "build" con un appljs y un index.html
 9. Go to `http://localhost:8080/` and check that it shows the Hello World!!
-10. Cuando creemos el fichero .jsx, todo 
+10. Cuando creemos el fichero .jsx, todo
+
+
+##Introducción a ES6 
+* JS tiene una manera nativa de importar y exportar módulos
+* Aparecen clases

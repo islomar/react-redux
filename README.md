@@ -5,3 +5,4 @@ Playground for learning about React and family
 * https://www.codesai.com/2017/04/getting-started-react-redux
 * https://www.codesai.com/2017/04/dependency-injection-react-redux
 * https://www.youtube.com/watch?v=uvAXVMwHJXU
+* https://twitter.com/david_bonilla/status/852470041903845377

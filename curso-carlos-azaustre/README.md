@@ -1,24 +1,46 @@
 # Curso Fundamentos de React (Carlos Azaustre)
-
 http://cursos.carlosazaustre.es/courses/enrolled/react-js
 
-**Herramientas de desarrollo**
-* Babel
-* webpack: http://webpack.github.io/
- * Es un module bundler
+Duración aproximada: 6 horas
+
+## General
+* React es únicamente una librería, no un framework.
+* Se encarga del renderizado de la vista en el navegador.
+* Desarrollada por Facebook, al igual que Webpack.
+* Aplicaciones isomórficas: La primera carga se realiza en el servidor, el resto en la parte de cliente (SPA).
+* React Native: no es una aplicación híbrida como Ionic o Cordova, sino que te genera una aplicación nativa de verdad.
+* Babel: transpilador
+
+## ¿Cómo funciona React.js?
+Debido a su naturaleza funcional. React no necesita de listeners, observers o double-way data-binding para renderizar cambios. Los componentes de React son capaces de autogestionarse y saber cuando volver a renderizarse debido a cambios de sus estados internos o por paso de propiedades.
+El acceso al DOM (Document Object Model) es una de las partes que más ralentizan una aplicación web. Es muy costoso acceder al DOM y realizar cambios, ya que tiene que comprobar todos los nodos hasta encontrar cual y que ha cambiado.
+Para ello React tiene una implementación que denomina **Virtual DOM**, que es una representación del DOM original en memoria, pero únicamente con las propiedades necesarias que permiten identificar cambios y todo su sistema de eventos sintéticos.
+Cuando llamamos a la función setState en la que añadimos un nuevo estado al Componente, React marca ese Component como dirty. Al finalizar el flujo de eventos que producen ese cambio de estado, React mira que componentes han quedado marcados como dirty y los re-renderiza.
+Para identificar los cambios y decidir si renderizar el componente de nuevo o no, utiliza un algoritmo de diffing que consiste en que a cada cambio se genere un nuevo árbol virtual DOM, lo compara con el anterior, decide cuales son los cambios mínimos a implementar, los encola y los termina de procesar.
+* React's diff algorithm: https://calendar.perfplanet.com/2013/diff/
+
+## NPM
+* gestor de paquetes/dependencias de Node
+* Todas las dependencias se instalarán en "node_modules"
+* **require:** palabra reservada de Node >> usaremos import/export, palabras reservadas de ES6
+
 
 ## Babel
 * https://babeljs.io/repl/
 * Para que el ES6 sea entendido por todos los navegadores.
+* ES6 = ES2015 (ECMAScript 6th Edition)
 * También sirve para React por el preset que tiene (sin necesidad de importar el transformador de JSX).
 * Se instala como dependencias con el npm.
 * Cada módulo de ES2015 se instala con un plugin independiente.
-* Si quieres usar todo el estándar, existen unos paquetes especiales (presets) que incluyen todos los plugins de, por ejemplo, ES2015.
+* Si quieres usar todo el estándar, existen unos paquetes especiales (**presets**) que incluyen todos los plugins de, por ejemplo, ES2015.
 * También existe ES2016 y ES2017.
-* Si quieres todo (ES2015, ES2016, ES2017), existe el preset "latest" (así tienes todo lo nuevo).
+* Si quieres todo (ES2015, ES2016, ES2017), existe el preset **"latest"** (así tienes todo lo nuevo).
+* También existe un preset para react
 
 
 ## webpack
+* http://webpack.github.io/
+* Es un module bundler
 1. `npm init`
   * Genera un `package.json`
 2. Instalamos las dependencias
@@ -37,8 +59,9 @@ http://cursos.carlosazaustre.es/courses/enrolled/react-js
         * para poder utilizar los CSS modules, importará los estilos de los componentes y creará un CSS para ellos
 3. El paso anterior actualiza el package.json e instala todas las dependencias bajo node_modules (carpeta a ignorar por git)
 4. Creamos el fichero **webpack.config.js**
-    * extensiones que webpack debe vigilar para aplicando transformadores
+    * extensiones que webpack debe vigilar para aplicar transformadores
     * fichero de entrada (index.jsx) y qué fichero de salida generar (y dónde)
+    * atributo "publicPath": para el caso en que se use un servidor de Desarrollo.
     * regex para ver a qué ficheros aplicar transformadores y a cuáles no: los aplica a los ficheros de nuestra aplicación, no a las dependencias (node_modules)
         * El loader `babel` hace referencia al `babel-loader`
     * Todos los ficheros acabados con la extensión .css, deben usar el loader style-loader y css-loader (se concatenan con la exclamación).

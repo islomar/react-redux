@@ -6,7 +6,18 @@ class Main extends Component {
         super()
         this.state = {
             messages: [{
-                text: 'Mensaje de prueba'
+                text: 'Mensaje del Tweet',
+                picture: 'https://pbs.twimg.com/profile_images/531448490954469376/ndNK81ZW_400x400.jpeg',
+                displayName: 'Isidro López',
+                username: 'islomar',
+                date: Date.now() - 180000
+            },
+            {
+                text: 'Este es un nuevo mensaje',
+                picture: 'https://pbs.twimg.com/profile_images/531448490954469376/ndNK81ZW_400x400.jpeg',
+                displayName: 'Isidro López',
+                username: 'islomar',
+                date: Date.now() - 1800000
             }]
         }
     }

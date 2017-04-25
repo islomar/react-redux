@@ -99,6 +99,12 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 * Usamos CSS Modules
 * Los Components puede tener propiedades y estado.
     * Cuando el estado cambie, fuerza al Comp a llamar al render()
+* Librería moment para tiempos: `npm install moment --save`
+* Para buscar URLs de CDN de una librería: https://cdnjs.com/
+* Para tener un estilo común en todos los navegadores: `npm install normalize-css --save`
+    * Mejora espaciados y tipografía
+    * https://necolas.github.io/normalize.css/
+* TBD
 
 **Bookmark:**
 * Comunicación de datos entre Componentes (props) (1)
@@ -106,3 +112,12 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 
 ## Feedback para Carlos
 * Meter las dependencias/configuraciones justo cuando se vayan a utilizar, no antes. Así se gana consciencia de qué es necesario para qué (e.g. cssModules)
+
+## Para compartir en Alea
+* Librería moment
+* Librería normaliz-css:
+    * Normalize.css is a small CSS file that provides better cross-browser consistency in the default styling of HTML elements. It’s a modern, HTML5-ready, alternative to the traditional CSS reset.
+* webpack-dev-server
+* React Developer Tools
+* Para buscar URLs de CDN de una librería: https://cdnjs.com/
+* CSS Modules: A CSS Module is a CSS file in which all class names and animation names are scoped locally by default.

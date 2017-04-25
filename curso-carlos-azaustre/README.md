@@ -97,9 +97,11 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 ## Desarrollo de la aplicación
 * **package.json**: http://cursos.carlosazaustre.es/courses/117631/lectures/2103210
 * Usamos CSS Modules
-
+* Los Components puede tener propiedades y estado.
+    * Cuando el estado cambie, fuerza al Comp a llamar al render()
 
 **Bookmark:**
+* Comunicación de datos entre Componentes (props) (1)
 
 
 ## Feedback para Carlos

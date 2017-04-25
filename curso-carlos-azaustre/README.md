@@ -96,7 +96,11 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 
 ## Desarrollo de la aplicación
 * **package.json**: http://cursos.carlosazaustre.es/courses/117631/lectures/2103210
-
+* Usamos CSS Modules
 
 
 **Bookmark:**
+
+
+## Feedback para Carlos
+* Meter las dependencias/configuraciones justo cuando se vayan a utilizar, no antes. Así se gana consciencia de qué es necesario para qué (e.g. cssModules)

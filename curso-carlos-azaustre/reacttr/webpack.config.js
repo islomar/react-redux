@@ -8,22 +8,23 @@ module.exports = {
         extensions: ['', '.js', '.jsx']
     },
 
-    entry: ['./src/index.jsx'],    
+    entry: ['./src/index.jsx'],
     output: {
         filename: 'app.js',
         path: './build',
         publicPath: '/'
     },
-    
+
     module: {
         loaders: [
             { test: /(\.js|jsx)$/, exclude: /node_modules/, loaders: ['babel'] },
-            { test: /(.css)$/, loader: 'style-loader!css-loader?${cssModules}'}
+            //{ test: /(.css)$/, loader: 'style-loader!css-loader?${cssModules}'},
+            { test: /\.css$/, loaders: ['style?sourceMap','css?modules&importLoaders=1&localIdentName=[name]__[local]__[hash:base64:5]']}
         ]
     },
 
     devServer: {
-        host: '0.0.0.0', 
+        host: '0.0.0.0',
         port: 8080,
         inline: true
     },

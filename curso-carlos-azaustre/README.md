@@ -3,6 +3,11 @@ http://cursos.carlosazaustre.es/courses/enrolled/react-js
 
 Duración aproximada: 6 horas
 
+## Dockerization
+* https://medium.com/@tribou/react-and-flux-a-docker-development-workflow-469957f3bbf0
+* https://github.com/jllado/react-minimal-setup
+
+
 ## General
 * React es únicamente una librería, no un framework.
 * Se encarga del renderizado de la vista en el navegador.
@@ -48,7 +53,7 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
   * Si son solo para desarrollo (e.g. webpack, Babel), se instalan con flag `--save-dev`, y se meterán en dev-dependencies:
     * `npm install --save-dev webpack webpack-dev-server`
         * `webpack-dev-server` para arrancar un servidor en local y poder probar más fácilmente
-    * `npm install --save-dev babel-cli babel-preset-latest babel-preset-react`
+    * `npm install --save-dev babel-cli babel-preset-latest babel-preset-react babel-loader`
       * `babel-cli` incluye el core de Babel
       * `babel-loader` es el cargador que usa webpack en su fichero de configuración y permite usar Babel en webpack
     * `npm install --save-dev css-loader style-loader`

@@ -81,8 +81,17 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 
 
 ## Introducción a ES6
+* Ver es6-basic-example.js
 * JS tiene una manera nativa de importar y exportar módulos
     * import <> from '<>'
     * export default <name>
 * Aparecen clases
 * Arrow functions
+* Template strings
+
+## Desarrollo de la aplicación
+* **package.json**: http://cursos.carlosazaustre.es/courses/117631/lectures/2103210
+
+
+
+**Bookmark:**

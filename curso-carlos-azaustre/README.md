@@ -107,11 +107,12 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 * TBD
 
 **Bookmark:**
-* Comunicación de datos entre Componentes (props) (1)
+* Manejando el Estado
 
 
 ## Feedback para Carlos
 * Meter las dependencias/configuraciones justo cuando se vayan a utilizar, no antes. Así se gana consciencia de qué es necesario para qué (e.g. cssModules)
+* Tener el código con pequeños commits en el GitHub.
 
 ## Para compartir en Alea
 * Librería moment

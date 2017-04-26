@@ -20,3 +20,6 @@ https://github.com/acdlite/react-fiber-architecture
 ## React specific readings
 * https://facebook.github.io/react/blog/2015/12/18/react-components-elements-and-instances.html
 * https://github.com/reactjs/react-basic
+
+## Other readings
+* Painting with code with React Sketch: http://airbnb.design/painting-with-code/

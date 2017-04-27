@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import uuid from 'uuid'
 import MessageList from '../MessageList'
 import InputText from '../InputText'
 import ProfileBar from '../ProfileBar'
@@ -8,6 +9,7 @@ class Main extends Component {
         super()
         this.state = {
             messages: [{
+                id: uuid.v4(),
                 text: 'Mensaje del Tweet',
                 picture: 'https://pbs.twimg.com/profile_images/531448490954469376/ndNK81ZW_400x400.jpeg',
                 displayName: 'Isidro López',
@@ -15,6 +17,7 @@ class Main extends Component {
                 date: Date.now() - 180000
             },
             {
+                id: uuid.v4(),
                 text: 'Este es un nuevo mensaje',
                 picture: 'https://pbs.twimg.com/profile_images/531448490954469376/ndNK81ZW_400x400.jpeg',
                 displayName: 'Isidro López',
@@ -43,7 +46,7 @@ class Main extends Component {
                     username={this.props.user.email.split('@')[0]}
                     onOpenText={this.handleOpenText}
                 />
-                {this.renderOperText()}
+                {this.renderOpenText()}
                 <MessageList messages={this.state.messages} />
             </div>
         )

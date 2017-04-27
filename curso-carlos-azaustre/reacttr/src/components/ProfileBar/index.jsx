@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import styles from './profile-bar.css'
 
 class ProfileBar extends Component {
     constructor () {
@@ -14,7 +15,7 @@ class ProfileBar extends Component {
                 </figure>
                 <span className={styles.username}>Hola @{this.props.username}!</span>
                 <button onClick={this.props.onOpenText} className={styles.button}>
-                    <span callName="fa fa-lg fa-edit"></span> Tweet!
+                    <span className="fa fa-lg fa-edit"></span> Tweet!
                 </button>
             </div>
         )

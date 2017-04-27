@@ -104,7 +104,7 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 * Para tener un estilo común en todos los navegadores: `npm install normalize-css --save`
     * Mejora espaciados y tipografía
     * https://necolas.github.io/normalize.css/
-* TBD
+* `npm install --save uuid`: para asignar ids únicos a los mensajes
 
 **Bookmark:**
 * Propiedad 'key' en colecciones

@@ -105,6 +105,7 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
     * Mejora espaciados y tipografía
     * https://necolas.github.io/normalize.css/
 * `npm install --save uuid`: para asignar ids únicos a los mensajes
+* Para modificar el estado de un padre desde un hijo, el hijo llama a una función que esté en el padre.
 
 **Bookmark:**
 * Propiedad 'key' en colecciones

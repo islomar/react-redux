@@ -16,6 +16,8 @@ https://github.com/acdlite/react-fiber-architecture
 * https://www.codesai.com/2017/04/dependency-injection-react-redux
 * https://www.youtube.com/watch?v=uvAXVMwHJXU
 * https://twitter.com/david_bonilla/status/852470041903845377
+* http://andrewhfarmer.com/component-communication/
+* https://facebook.github.io/react/docs/react-component.html#the-component-lifecycle
 
 ## React specific readings
 * https://facebook.github.io/react/blog/2015/12/18/react-components-elements-and-instances.html

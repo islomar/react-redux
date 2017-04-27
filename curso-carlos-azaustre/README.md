@@ -107,7 +107,7 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 * TBD
 
 **Bookmark:**
-* Manejando el Estado
+* Propiedad 'key' en colecciones
 
 
 ## Feedback para Carlos

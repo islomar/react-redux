@@ -108,7 +108,7 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 * Para modificar el estado de un padre desde un hijo, el hijo llama a una función que esté en el padre.
 
 **Bookmark:**
-* Propiedad 'key' en colecciones
+* Modificando el estado de un Componente mediante eventos
 
 
 ## Feedback para Carlos

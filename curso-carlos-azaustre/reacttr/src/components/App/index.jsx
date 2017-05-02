@@ -12,6 +12,7 @@ class App extends Component {
             user: {
                 photoURL: 'https://pbs.twimg.com/profile_images/531448490954469376/ndNK81ZW_400x400.jpeg',
                 email: 'islomar@gmail.com',
+                displayName: 'Isidro López',
                 onOpenText: false
             }
         }

@@ -122,8 +122,9 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 * Instalar `npm install --save react-router@v4.0.0-alpha.4`
 * Aparece `Warning: Accessing PropTypes via the main React package is deprecated. Use the prop-types package from npm instead`
     * http://stackoverflow.com/questions/43303995/react-router-npm-package-giving-me-warning-in-console-proptypes-deprecated
+* Spread operator: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator
+    * Para pasar todo un objeto, e.g. `{... this.state.user}`
 * TBD
-
 
 **Bookmark:**
 * Eventos sintéticos

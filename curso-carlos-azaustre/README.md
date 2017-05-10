@@ -110,10 +110,15 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
     * https://necolas.github.io/normalize.css/
 * `npm install --save uuid`: para asignar ids únicos a los mensajes
 * Para modificar el estado de un padre desde un hijo, el hijo llama a una función que esté en el padre.
+* ES6: Si el atributo a modificar se llama igual que la key, puedes poner solo uno.
 
 **Bookmark:**
 * Modificando el estado de un Componente mediante eventos
 
+
+## Pendiente de investigar:
+* Diferencia const vs let.
+* Ciclo de vida de React
 
 ## Feedback para Carlos
 * Meter las dependencias/configuraciones justo cuando se vayan a utilizar, no antes. Así se gana consciencia de qué es necesario para qué (e.g. cssModules)
@@ -127,3 +132,6 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 * Plugin Chrome: React Developer Tools
 * Para buscar URLs de CDN de una librería: https://cdnjs.com/
 * CSS Modules: A CSS Module is a CSS file in which all class names and animation names are scoped locally by default.
+* Convención onXxxxx para funciones que reaccionan a eventos.
+* Todo inmutable, tipo `let user = Object.assign({}, this.state.user)`
+* ES6: si key==value, dejar solo el key

@@ -5,16 +5,20 @@ import InputText from '../InputText'
 import ProfileBar from '../ProfileBar'
 
 class Main extends Component {
-    constructor () {
-        super()
+    constructor (props) {
+        super(props)
         this.state = {
+            user: Object.assign({}, this.props.user, {retweets: []}, {favorites: []}),
+            openText: false,
             messages: [{
                 id: uuid.v4(),
                 text: 'Mensaje del Tweet',
                 picture: 'https://pbs.twimg.com/profile_images/531448490954469376/ndNK81ZW_400x400.jpeg',
                 displayName: 'Isidro López',
                 username: 'islomar',
-                date: Date.now() - 180000
+                date: Date.now() - 180000,
+                retweets: 0,
+                favorites: 0
             },
             {
                 id: uuid.v4(),
@@ -22,13 +26,17 @@ class Main extends Component {
                 picture: 'https://pbs.twimg.com/profile_images/531448490954469376/ndNK81ZW_400x400.jpeg',
                 displayName: 'Isidro López',
                 username: 'islomar',
-                date: Date.now() - 1800000
+                date: Date.now() - 1800000,
+                retweets: 0,
+                favorites: 0
             }]
         }
 
         this.handleSendText = this.handleSendText.bind(this)
         this.handleCloseText = this.handleCloseText.bind(this)
         this.handleOpenText = this.handleOpenText.bind(this)
+        this.handleRetweet = this.handleRetweet.bind(this)
+        this.handleFavorite = this.handleFavorite.bind(this)
     }
 
     handleSendText (event) {
@@ -58,6 +66,46 @@ class Main extends Component {
         this.setState({ openText: true })
     }
 
+    handleRetweet (msgId) {
+        let alreadyRetweeted = this.state.user.retweets.filter(rt => rt === msgId)
+
+        if (alreadyRetweeted.length === 0) {
+            let messages = this.state.messages.map(msg => {
+                if (msg.id === msgId) {
+                    msg.retweets++
+                }
+                return msg
+            })
+
+            let user = Object.assign({}, this.state.user)
+            user.retweets.push(msgId)
+            this.setState({
+                messages,
+                user
+            })
+        }
+    }
+
+    handleFavorite (msgId) {
+        let alreadyFavorited = this.state.user.favorites.filter(fav => fav === msgId)
+
+        if (alreadyFavorited.length === 0) {
+            let messages = this.state.messages.map(msg => {
+                if (msg.id === msgId) {
+                    msg.favorites++
+                }
+                return msg
+            })
+
+            let user = Object.assign({}, this.state.user)
+            user.favorites.push(msgId)
+            this.setState({
+                messages,
+                user
+            })
+        }
+    }
+
     renderOpenText () {
         if (this.state.openText) {
             return (
@@ -78,7 +126,11 @@ class Main extends Component {
                     onOpenText={this.handleOpenText}
                 />
                 {this.renderOpenText()}
-                <MessageList messages={this.state.messages} />
+                <MessageList
+                    messages={this.state.messages}
+                    onRetweet={this.handleRetweet}
+                    onFavorite={this.handleFavorite}
+                />
             </div>
         )
     }

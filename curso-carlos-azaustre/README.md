@@ -24,6 +24,10 @@ Cuando llamamos a la función setState en la que añadimos un nuevo estado al Co
 Para identificar los cambios y decidir si renderizar el componente de nuevo o no, utiliza un algoritmo de diffing que consiste en que a cada cambio se genere un nuevo árbol virtual DOM, lo compara con el anterior, decide cuales son los cambios mínimos a implementar, los encola y los termina de procesar.
 * React's diff algorithm: https://calendar.perfplanet.com/2013/diff/
 
+## Node
+* Instalasr: https://www.digitalocean.com/community/tutorials/como-instalar-node-js-en-ubuntu-16-04-es
+* https://nodejs.org/es/download/package-manager/
+
 ## NPM
 * gestor de paquetes/dependencias de Node
 * Todas las dependencias se instalarán en "node_modules"
@@ -117,9 +121,9 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 
 ## Para compartir en Alea
 * Librería moment
-* Librería normaliz-css:
+* Librería normalize-css:
     * Normalize.css is a small CSS file that provides better cross-browser consistency in the default styling of HTML elements. It’s a modern, HTML5-ready, alternative to the traditional CSS reset.
 * webpack-dev-server
-* React Developer Tools
+* Plugin Chrome: React Developer Tools
 * Para buscar URLs de CDN de una librería: https://cdnjs.com/
 * CSS Modules: A CSS Module is a CSS file in which all class names and animation names are scoped locally by default.

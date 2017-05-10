@@ -111,7 +111,17 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 * `npm install --save uuid`: para asignar ids únicos a los mensajes
 * Para modificar el estado de un padre desde un hijo, el hijo llama a una función que esté en el padre.
 * ES6: Si el atributo a modificar se llama igual que la key, puedes poner solo uno.
-* **Eventos sintéticos**: React, con JSX, tiene una serie de eventos sintéticos que permite abstraerte de los eventos del navegador, de manera que no haya que usar ningún addEventListener u otras librerías como jQuery para tratarlos.
+* **Eventos sintéticos**:
+    * https://facebook.github.io/react/docs/events.html
+    * No aparecen renderizados en el HTML como un evento inline, sino que se delega a través del Virtual DOM.
+    * React, con JSX, tiene una serie de eventos sintéticos que permite abstraerte de los eventos del navegador, de manera que no haya que usar ningún addEventListener u otras librerías como jQuery para tratarlos.
+
+## React-Router
+* Todas las vistas están en la aplicación cliente
+* React no tiene esta funcionalidad, pero sí `react-router`
+* Instalar `npm install --save react-router@v4.0.0-alpha.4`
+* Aparece `Warning: Accessing PropTypes via the main React package is deprecated. Use the prop-types package from npm instead`
+
 
 **Bookmark:**
 * Eventos sintéticos

@@ -49,7 +49,12 @@ class App extends Component {
                     )} />
 
                     <Match pattern='/user/:username' render={ ({ params }) => {
-                            // Render <Profile /> pasando params.username
+                        return (
+                            <Profile
+                                displayName={params.username}
+                                username={params.username}
+                            />
+                        )
                     }} />
                 </div>
             </HashRouter>

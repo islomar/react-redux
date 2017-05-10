@@ -25,8 +25,8 @@ class Main extends Component {
                 id: uuid.v4(),
                 text: 'Este es un nuevo mensaje',
                 picture: 'https://pbs.twimg.com/profile_images/531448490954469376/ndNK81ZW_400x400.jpeg',
-                displayName: 'Isidro López',
-                username: 'islomar',
+                displayName: 'Isidoro',
+                username: 'Isidoro',
                 date: Date.now() - 1800000,
                 retweets: 0,
                 favorites: 0

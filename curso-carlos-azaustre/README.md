@@ -121,6 +121,8 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 * React no tiene esta funcionalidad, pero sí `react-router`
 * Instalar `npm install --save react-router@v4.0.0-alpha.4`
 * Aparece `Warning: Accessing PropTypes via the main React package is deprecated. Use the prop-types package from npm instead`
+    * http://stackoverflow.com/questions/43303995/react-router-npm-package-giving-me-warning-in-console-proptypes-deprecated
+* TBD
 
 
 **Bookmark:**
@@ -139,6 +141,7 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 * Librería moment
 * Librería normalize-css:
     * Normalize.css is a small CSS file that provides better cross-browser consistency in the default styling of HTML elements. It’s a modern, HTML5-ready, alternative to the traditional CSS reset.
+* Flexbox
 * webpack-dev-server
 * Plugin Chrome: React Developer Tools
 * Para buscar URLs de CDN de una librería: https://cdnjs.com/

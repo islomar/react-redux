@@ -111,9 +111,10 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 * `npm install --save uuid`: para asignar ids únicos a los mensajes
 * Para modificar el estado de un padre desde un hijo, el hijo llama a una función que esté en el padre.
 * ES6: Si el atributo a modificar se llama igual que la key, puedes poner solo uno.
+* **Eventos sintéticos**: React, con JSX, tiene una serie de eventos sintéticos que permite abstraerte de los eventos del navegador, de manera que no haya que usar ningún addEventListener u otras librerías como jQuery para tratarlos.
 
 **Bookmark:**
-* Modificando el estado de un Componente mediante eventos
+* Eventos sintéticos
 
 
 ## Pendiente de investigar:
@@ -132,6 +133,8 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 * Plugin Chrome: React Developer Tools
 * Para buscar URLs de CDN de una librería: https://cdnjs.com/
 * CSS Modules: A CSS Module is a CSS file in which all class names and animation names are scoped locally by default.
-* Convención onXxxxx para funciones que reaccionan a eventos.
+* Convención onXxxxx para funciones que reaccionan a eventos onClick() o onXxx().
+* Covnenciones de nombre handleXxxx()"
 * Todo inmutable, tipo `let user = Object.assign({}, this.state.user)`
 * ES6: si key==value, dejar solo el key
+* El estado de un componente solo debe ser modificado por el propio componente

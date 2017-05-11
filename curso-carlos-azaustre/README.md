@@ -136,8 +136,14 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
     * Para tener tipos: Typescript o Flow.
     * Una opción más sencilla: PropTypes
 
+
+## Integración con Firebase
+* Cuenta en google.firebase.com
+* Crear proyecto
+* `npm install --save firebase`
+
 **Bookmark:**
-* Eventos sintéticos
+* Añadiendo Autenticación Social
 
 
 ## Pendiente de investigar:

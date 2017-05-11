@@ -9,8 +9,8 @@ const propTypes = {
   displayName: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   date: PropTypes.number.isRequired,
-  numRetweets: PropTypes.number.isRequired,
-  numFavorites: PropTypes.number.isRequired,
+  numRetweets: PropTypes.number,
+  numFavorites: PropTypes.number,
   onReplyTweet: PropTypes.func.isRequired,
   onFavorite: PropTypes.func.isRequired,
   onRetweet: PropTypes.func.isRequired

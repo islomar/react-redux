@@ -132,7 +132,9 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
         * Header
     * Stateful: componentes contenedor; aparte de estado, tienen funciones. etc.
     * Solo extender de Component si eres Stateful. Así, los representacionales son más reutilizables, incluso en otras aplicaciones.
-* Uso de PropTypes
+* Uso de PropTypes:
+    * Para tener tipos: Typescript o Flow.
+    * Una opción más sencilla: PropTypes
 
 **Bookmark:**
 * Eventos sintéticos
@@ -161,3 +163,4 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 * ES6: si key==value, dejar solo el key
 * El estado de un componente solo debe ser modificado por el propio componente
 * Componentes Stateful vs Stateless: No heredar de Component si no tiene estado
+* Uso de PropTypes (tipado)

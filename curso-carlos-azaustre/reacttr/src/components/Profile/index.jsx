@@ -1,6 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router'
 import styles from './profile.css'
+
+const propTypes = {
+    picture: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+    emailAddress: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    displayName: PropTypes.string.isRequired,
+}
 
 class Profile extends Component {
     render () {
@@ -23,5 +31,7 @@ class Profile extends Component {
         )
     }
 }
+
+Profile.propTypes = propTypes
 
 export default Profile

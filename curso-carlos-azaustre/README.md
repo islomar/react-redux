@@ -145,6 +145,8 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 * Cuenta en google.firebase.com
 * Crear proyecto
 * `npm install --save firebase`
+* Firebase -> Authentication -> Signin providers -> GitHub -> Copiamos la callback URL y la damos de alta en GitHub (OAuth providers) -> el clientId/clientSecret de GitHub lo copiamos en Firebase.
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then
 
 **Bookmark:**
 * Añadiendo Autenticación Social
@@ -174,3 +176,11 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 * El estado de un componente solo debe ser modificado por el propio componente
 * Componentes Stateful vs Stateless: No heredar de Component si no tiene estado
 * Uso de PropTypes (tipado)
+
+
+## Problemas
+`React.createElement: type is invalid -- expected a string or a class/function but got: undefined`
+* Comentado aquí: http://cursos.carlosazaustre.es/courses/117631/lectures/1738311
+* https://github.com/ReactTraining/react-router/issues/4477
+* https://github.com/AnomalyInnovations/serverless-stack-com/issues/33
+* Referencia: https://github.com/AnomalyInnovations/serverless-stack-demo-client/blob/handle-routes-with-react-router/package.json

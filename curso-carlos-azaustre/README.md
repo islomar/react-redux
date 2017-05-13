@@ -147,9 +147,16 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
 * `npm install --save firebase`
 * Firebase -> Authentication -> Signin providers -> GitHub -> Copiamos la callback URL y la damos de alta en GitHub (OAuth providers) -> el clientId/clientSecret de GitHub lo copiamos en Firebase.
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then
+* Métodos del ciclo de vida de React:
+    * componentWillMount():
+        * es similar a componentDidMount, pero para aplicaciones isomórficas (renderizadas desde servidor).
+        * se ejecuta tanto en cliente como servidor, una vez el componente ya se ha renderizado y ya tenemos acceso al DOM y a los componentes creados
+        * se pueden usar librerías externas.
+    *
+* TBD
 
 **Bookmark:**
-* Añadiendo Autenticación Social
+* Añadiendo persistencia con base de datos
 
 
 ## Pendiente de investigar:

@@ -13,24 +13,36 @@ class App extends Component {
     constructor () {
         super()
         this.state = {
-            user: {
-                photoURL: 'https://pbs.twimg.com/profile_images/531448490954469376/ndNK81ZW_400x400.jpeg',
-                email: 'islomar@gmail.com',
-                displayName: 'Isidro López',
-                location: 'Madrid, España',
-                onOpenText: false
-            }
+            user: null
         }
 
         this.handleOnAuth = this.handleOnAuth.bind(this)
+        this.handleLogout =this.handleLogout.bind(this)
+    }
+
+    componentWillMount() {
+        firebase.auth().onAuthStateChanged( user => {
+            if (user) { //cuando nos conectamos
+                this.setState({ user })
+                console.log(user)
+            } else { // cuando nos hemos desconectado, ya no hay usuario
+                this.setState({ user: null })
+            }
+        })
     }
 
     handleOnAuth () {
         const provider = new firebase.app.GithubAuthProvider()
 
-        firebase.auth.signInWithPopup()
+        firebase.auth().signInWithPopup()
             .then( result => console.log(`${result.user.email} ha iniciado sesión`) )
             .catch( error => console.error(`Error: ${error.code}: ${error.message}`))
+    }
+
+    handleLogout() {
+        firebase.auth().signOut()
+            .then( () => console.log('Te has desconectado correctamente') )
+            .catch( () => console.error('Ocurrió un error') )
     }
 
     render () {
@@ -42,7 +54,9 @@ class App extends Component {
                     <Match exactly pattern='/' render={ () => {
                         if (this.state.user) {
                             return (
-                                <Main user={this.state.user}/>
+                                <Main 
+                                    user={this.state.user}
+                                    onLogout={this.handleLogout}/>
                             )
                         } else {
                             return (

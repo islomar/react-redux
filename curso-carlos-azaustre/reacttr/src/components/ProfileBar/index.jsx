@@ -6,6 +6,7 @@ const propTypes = {
     picture: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
     onOpenText: PropTypes.func.isRequired,
+    onLogout: PropTypes.func.isRequired
 }
 
 function ProfileBar ({ picture, username, onOpenText, onLogout }) {
@@ -20,6 +21,9 @@ function ProfileBar ({ picture, username, onOpenText, onLogout }) {
             <button onClick={onOpenText} className={styles.button}>
                 <span className="fa fa-lg fa-edit"></span> Tweet!
             </button>
+            <button onClick={onLogout} className={styles.button}>
+                <span className="fa fa-sign-out"></span> Salir
+            </button>            
         </div>
     )
 }

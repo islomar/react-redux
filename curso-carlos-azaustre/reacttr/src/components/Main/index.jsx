@@ -65,7 +65,9 @@ class Main extends Component {
             displayName: this.props.user.displayName,
             picture: this.props.user.photoURL,
             date: Date.now(),
-            text: event.target.text.value
+            text: event.target.text.value,
+            favorites: 0,
+            retweets: 0
         }
 
         const messageRef = firebase.database().ref().child('messages')

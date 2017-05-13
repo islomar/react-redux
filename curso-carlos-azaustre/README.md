@@ -152,8 +152,7 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
         * es similar a componentDidMount, pero para aplicaciones isomórficas (renderizadas desde servidor).
         * se ejecuta tanto en cliente como servidor, una vez el componente ya se ha renderizado y ya tenemos acceso al DOM y a los componentes creados
         * se pueden usar librerías externas.
-    *
-* TBD
+* Database: NoSQL, JSON.
 
 **Bookmark:**
 * Añadiendo persistencia con base de datos

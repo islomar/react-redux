@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import uuid from 'uuid'
+import firebase from 'firebase'
 import MessageList from '../MessageList'
 import InputText from '../InputText'
 import ProfileBar from '../ProfileBar'
@@ -46,6 +47,16 @@ class Main extends Component {
         this.handleReplyTweet = this.handleReplyTweet.bind(this)
     }
 
+    componentWillMount() {
+        const messagesRef = firebase.database().ref().child('messages') //create a child with name 'messages' (object inside the DB)
+        messagesRef.on('child_added', snapshot => { //'child_added' is a Firebase event triggered when a child is added (sic)
+            this.setState({
+                messages: this.state.messages.concat(snapshot.val()),
+                openText: false
+            })
+        })
+    }
+
     handleSendText (event) {
         event.preventDefault()
         let newMessage = {
@@ -56,11 +67,10 @@ class Main extends Component {
             date: Date.now(),
             text: event.target.text.value
         }
-        console.log(newMessage)
-        this.setState({
-            messages: this.state.messages.concat([newMessage]),
-            openText: false
-        })
+
+        const messageRef = firebase.database().ref().child('messages')
+        const messageId = messageRef.push()
+        messageId.set(newMessage)
     }
 
     handleCloseText (event) {

@@ -3,6 +3,10 @@ http://cursos.carlosazaustre.es/courses/enrolled/react-js
 
 Duración aproximada: 6 horas
 
+## Versiones
+* npm: v3.10.8
+* node: v6.9.1
+
 ## Dockerization
 * https://medium.com/@tribou/react-and-flux-a-docker-development-workflow-469957f3bbf0
 * https://github.com/jllado/react-minimal-setup

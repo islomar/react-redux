@@ -1,5 +1,5 @@
-# React information
-Playground for learning about React and family
+# React and Redux information
+Playground for learning about React, Redux and family
 
 ## Tutorials
 * https://facebook.github.io/react/tutorial/tutorial.html

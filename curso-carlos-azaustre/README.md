@@ -153,6 +153,14 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
         * se ejecuta tanto en cliente como servidor, una vez el componente ya se ha renderizado y ya tenemos acceso al DOM y a los componentes creados
         * se pueden usar librerías externas.
 * Database: NoSQL, JSON.
+* `npm install -g firebase-tools `
+* Hosting:
+    * `firebase login`
+    * `firebase init`
+    * `npm run production`: para generar el index.html y la carpeta build
+    * `firebase deploy`: para subir el index.html y la carpeta build a Firebase
+    * Project console: https://console.firebase.google.com/project/curso-react-17251/overview
+    * Hosting URL: https://curso-react-17251.firebaseapp.com
 
 **Bookmark:**
 * Añadiendo persistencia con base de datos

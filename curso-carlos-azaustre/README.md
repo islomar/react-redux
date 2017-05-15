@@ -162,9 +162,6 @@ Para identificar los cambios y decidir si renderizar el componente de nuevo o no
     * Project console: https://console.firebase.google.com/project/curso-react-17251/overview
     * Hosting URL: https://curso-react-17251.firebaseapp.com
 
-**Bookmark:**
-* Añadiendo persistencia con base de datos
-
 
 ## Pendiente de investigar:
 * Diferencia const vs let.

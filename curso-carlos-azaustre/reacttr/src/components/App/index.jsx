@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { HashRouter, Match } from 'react-router'
 import firebase from 'firebase'
 import 'normalize-css'
+import 'normalize-css'
 
 import styles from './app.css'
 import Header from '../Header'
@@ -32,9 +33,9 @@ class App extends Component {
     }
 
     handleOnAuth () {
-        const provider = new firebase.app.GithubAuthProvider()
+        const provider = new firebase.auth.GithubAuthProvider()
 
-        firebase.auth().signInWithPopup()
+        firebase.auth().signInWithPopup(provider)
             .then( result => console.log(`${result.user.email} ha iniciado sesión`) )
             .catch( error => console.error(`Error: ${error.code}: ${error.message}`))
     }

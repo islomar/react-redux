@@ -13,7 +13,10 @@ Duration: 5 hours
 
 ## Notes
 * With Redux, we keep all our data on a Store. Instead of having several states, we have one only big store (WTF).
+* Actions: smth that happens in your application, it dispatches an action, which has two things: the action that happened and info needed.
+* Reducers: once I get the action, how do I update the data.
+* Depending on the size, create one actionCreator per file
 
 
 ## Bookmark
-Video 5/20
+Video 6/20

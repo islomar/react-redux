@@ -23,5 +23,10 @@ https://github.com/acdlite/react-fiber-architecture
 * https://facebook.github.io/react/blog/2015/12/18/react-components-elements-and-instances.html
 * https://github.com/reactjs/react-basic
 
+## Redux tutorials
+* https://learnredux.com
+* https://www.youtube.com/watch?v=-AbaV3nrw6E&list=PL6gx4Cwl9DGBuKtLgPR_zWYnrwv-JllpA
+* Facebook: http://redux.js.org/docs/basics/ExampleTodoList.html
+
 ## Other readings
 * Painting with code with React Sketch: http://airbnb.design/painting-with-code/

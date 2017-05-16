@@ -1,6 +1,7 @@
 # Lear Redux
 Wes Bos tutorial
 https://reactforbeginners.com/account/access/586c180a73e59699e1bac2c0
+Duration: 5 hours
 
 ## First steps
 * Copy styles and files from Wes Bos: https://github.com/wesbos/Learn-Redux-Starter-Files
@@ -12,4 +13,4 @@ https://reactforbeginners.com/account/access/586c180a73e59699e1bac2c0
 
 
 ## Bookmark
-Video 3/20
+Video 4/20

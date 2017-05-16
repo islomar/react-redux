@@ -11,6 +11,9 @@ Duration: 5 hours
 * React Dev Tools
 * Redux Dev Tools: https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en
 
+## Notes
+* With Redux, we keep all our data on a Store. Instead of having several states, we have one only big store (WTF).
+
 
 ## Bookmark
-Video 4/20
+Video 5/20

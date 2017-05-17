@@ -19,6 +19,8 @@ Duration: 5 hours
     * We can only have one reducer, so we create one only big reducer
 * Depending on the size, create one actionCreator per file
 * **Provider** makes available the Store to any component in our app.
+* Each time you dispatch an Action, EVERY reducer will run. Is up to each reducer to be executed or not.
+
 
 ## Bookmark
 Video 8/20

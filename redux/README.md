@@ -12,6 +12,7 @@
         * The Actions are usually created through an Action Creator.
     * Changes with pure functions: **reducers**.
         * A Reducer is a function which receives two parameters, an initial State and an Action, and it executes a specific operation on the State. It's always immutable, we can not modify the State, so we create a copy from it.
+        * Isn't it somehow the Flux dispatcher?
 * API de Redux:
     * createStore()
         * store.dispatch(action): it emits an Action, it's the only way to update the State

@@ -18,8 +18,11 @@ Duration: 5 hours
     * We create a reducer for every piece of state (e.g. posts and comments in our case).
     * We can only have one reducer, so we create one only big reducer
 * Depending on the size, create one actionCreator per file
-
+* **Provider** makes available the Store to any component in our app.
 
 ## Bookmark
 Video 8/20
 https://reactforbeginners.com/account/access/586c180a73e59699e1bac2c0/view/1c093acaa6
+
+## Doubts
+* What is Provider for?

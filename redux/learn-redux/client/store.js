@@ -7,7 +7,7 @@ import rootReducer from './reducers/index';
 
 // import default data
 import comments from './data/comments';
-import comments from './data/posts';
+import posts from './data/posts';
 
 //create an object for the default data
 const defaultState = {

@@ -20,10 +20,11 @@ Duration: 5 hours
 * Depending on the size, create one actionCreator per file
 * **Provider** makes available the Store to any component in our app.
 * Each time you dispatch an Action, EVERY reducer will run. Is up to each reducer to be executed or not.
+* React.cloneElement(): it allows any Main child to access the props from Main.
 
 
 ## Bookmark
-Video 8/20
+Video 11/20
 https://reactforbeginners.com/account/access/586c180a73e59699e1bac2c0/view/1c093acaa6
 
 ## Doubts

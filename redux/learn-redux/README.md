@@ -23,6 +23,12 @@ Duration: 5 hours
 * React.cloneElement(): it allows any Main child to access the props from Main.
 * The **ref** elements help us to reference data in the DOM (example in Comments).
 * **Reducer composition**: example in Comments
+* Error tracking with Sentry.
+    * Use tags as well.
+    * You can use logException() in order to send additional data
+    * showReportDialog()
+* TBD
+
 
 ## Bookmark
 Video 15/20

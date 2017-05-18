@@ -13,6 +13,24 @@ import PhotoGrid from './components/PhotoGrid'
 import Single from './components/Single'
 import store, { history } from './store'
 
+import Raven from 'raven-js';
+import { sentry_url, logException } from './data/config';
+
+Raven.config(sentry_url).install();
+
+//logException(new Error('download failed!'), {
+//    email: 'islomar@gmail.com'
+//})
+
+//console.log(store.doesNot.nope())
+
+// If you want to send a simple message to Sentry, without error trace or anything
+// You can see it later at the "User Feedback" tab in Sentry
+//Raven.captureMessage('Something bad happened');
+
+//It opens crash report pop-up
+//Raven.showReportDialog();
+
 const router = (
     <Provider store={store}>
         <Router history={history}>

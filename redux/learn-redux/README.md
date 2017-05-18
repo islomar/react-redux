@@ -22,7 +22,7 @@ Duration: 5 hours
 * Each time you dispatch an Action, EVERY reducer will run. Is up to each reducer to be executed or not.
 * React.cloneElement(): it allows any Main child to access the props from Main.
 * The **ref** elements help us to reference data in the DOM (example in Comments).
-
+* **Reducer composition**: example in Comments
 
 ## Bookmark
 Video 15/20

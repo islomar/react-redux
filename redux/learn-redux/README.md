@@ -28,16 +28,19 @@ Duration: 5 hours
     * You can use logException() in order to send additional data
     * showReportDialog()
 * Hot reloading Redux Reducers
-* TBD
+* Redux Dev Tools
 
 
 ## Bookmark
 Video 15/20
 https://reactforbeginners.com/account/access/586c180a73e59699e1bac2c0/view/1c093acaa6
 
+
 ##Interesting
 * import CSSTransitionGroup from 'react-addons-css-transition-group';
+* Sentry integration
 * Hot reloading Redux Reducers
+* Redux Dev Tools
 
 ## Doubts
 * What is Provider for?

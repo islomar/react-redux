@@ -21,10 +21,11 @@ Duration: 5 hours
 * **Provider** makes available the Store to any component in our app.
 * Each time you dispatch an Action, EVERY reducer will run. Is up to each reducer to be executed or not.
 * React.cloneElement(): it allows any Main child to access the props from Main.
+* The **ref** elements help us to reference data in the DOM (example in Comments).
 
 
 ## Bookmark
-Video 14/20
+Video 15/20
 https://reactforbeginners.com/account/access/586c180a73e59699e1bac2c0/view/1c093acaa6
 
 ##Interesting

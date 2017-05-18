@@ -17,6 +17,18 @@ const defaultState = {
 
 const store = createStore(rootReducer, defaultState);
 
-const history = syncHistoryWithStore(browserHistory, store);
+export const history = syncHistoryWithStore(browserHistory, store);
+
+if (module.hot) {
+    //rerequire reducers and load it back
+    module.hot.accept('./reducers/', () => {
+        console.log('Hot reloading the Reducers!!!!')
+        // you can not use import inside a function, so we use require()
+        const nextRootReducer = require('./reducers/index');
+        //This shows a JS warning because of the use of require() inside a function...
+        store.replaceReducer(rootReducer);
+
+    });
+}
 
 export default store;

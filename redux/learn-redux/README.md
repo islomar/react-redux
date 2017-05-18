@@ -27,6 +27,7 @@ Duration: 5 hours
     * Use tags as well.
     * You can use logException() in order to send additional data
     * showReportDialog()
+* Hot reloading Redux Reducers
 * TBD
 
 
@@ -36,6 +37,7 @@ https://reactforbeginners.com/account/access/586c180a73e59699e1bac2c0/view/1c093
 
 ##Interesting
 * import CSSTransitionGroup from 'react-addons-css-transition-group';
+* Hot reloading Redux Reducers
 
 ## Doubts
 * What is Provider for?

@@ -14,7 +14,7 @@ function mapDispatchToProps(dispatch) {
     return bindActionCreators(actionCreators, dispatch);
 }
 
-// we add all the action creators and all the props to Main
+// we add all the action creators and the State to Main
 // inject the data of the Store into any component that might actually need it
 const App = connect(mapStateToProps, mapDispatchToProps)(Main);
 

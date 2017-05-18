@@ -36,7 +36,7 @@
 * There can be several **Stores**
 * There are no methods on the Stores to modify its data: you do it through dispatchers and actions
 * **Action**:
-    * a JS object which expresses the intention to do something, having data associated.
+    * a JS object which expresses the intention to do something, having data (a payload) associated.
 * **Dispatcher**:
     * actions are sent to a dispatcher, which triggers/propagates it to the Store
     * it decouples the Store from the View, so that you don't have to know which Store handles a specific action.

@@ -13,6 +13,8 @@ import PhotoGrid from './components/PhotoGrid'
 import Single from './components/Single'
 import store, { history } from './store'
 
+import firebase from 'firebase'
+
 import Raven from 'raven-js';
 import { sentry_url, logException } from './data/config';
 
@@ -30,6 +32,15 @@ Raven.config(sentry_url).install();
 
 //It opens crash report pop-up
 //Raven.showReportDialog();
+
+firebase.initializeApp({
+    apiKey: "AIzaSyCcTk3sTe_nkBzakYw3fqeKYx29XQ_9Zx4",
+    authDomain: "reduxstagram-beefb.firebaseapp.com",
+    databaseURL: "https://reduxstagram-beefb.firebaseio.com",
+    projectId: "reduxstagram-beefb",
+    storageBucket: "reduxstagram-beefb.appspot.com",
+    messagingSenderId: "901985990745"
+})
 
 const router = (
     <Provider store={store}>

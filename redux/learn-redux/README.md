@@ -33,9 +33,9 @@ Duration: 5 hours
 * Redux Dev Tools
 
 
-## Bookmark
-Video 15/20
-https://reactforbeginners.com/account/access/586c180a73e59699e1bac2c0/view/1c093acaa6
+## Firebaes hosting
+Project Console: https://console.firebase.google.com/project/reduxstagram-beefb/overview
+Hosting URL: https://reduxstagram-beefb.firebaseapp.com
 
 
 ##Interesting

@@ -53,3 +53,4 @@
 ## Interesting links
 * https://carlosazaustre.es/blog/como-funciona-redux-conceptos-basicos
 * https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3
+* https://www.mapbox.com/blog/redux-for-state-management-in-large-web-apps/

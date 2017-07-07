@@ -22,6 +22,7 @@ https://github.com/acdlite/react-fiber-architecture
 ## React specific readings
 * https://facebook.github.io/react/blog/2015/12/18/react-components-elements-and-instances.html
 * https://github.com/reactjs/react-basic
+* https://css-tricks.com/learning-react-router/
 
 ## Redux tutorials
 * https://learnredux.com

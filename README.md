@@ -24,6 +24,7 @@ https://github.com/acdlite/react-fiber-architecture
 * https://github.com/reactjs/react-basic
 * https://css-tricks.com/learning-react-router/
 * https://medium.com/wehkamp-techblog/the-perfect-universal-front-end-stack-5375b64e0cde >> references about unit and integration testing
+* https://medium.com/@baphemot/understanding-reactjs-component-life-cycle-823a640b3e8d
 
 ## Redux tutorials
 * https://learnredux.com

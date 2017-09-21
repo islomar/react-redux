@@ -21,7 +21,7 @@ Duration: 5 hours
     * https://github.com/paularmstrong/normalizr
 * Depending on the size, create one actionCreator per file
 * **Provider** makes available the Store to any component in our app.
-* Each time you dispatch an Action, EVERY reducer will run. Is up to each reducer to be executed or not.
+* **Each time you dispatch an Action, EVERY reducer will run**. Is up to each reducer to be executed or not.
 * React.cloneElement(): it allows any Main child to access the props from Main.
 * The **ref** elements help us to reference data in the DOM (example in Comments).
 * **Reducer composition**: example in Comments

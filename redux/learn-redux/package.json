@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": ":) ",
   "scripts": {
-    "production": "webpack -p",    
+    "production": "webpack -p",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
     "build": "npm run clean && npm run build:webpack",
     "test": "NODE_ENV=production mocha './tests/**/*.spec.js' --compilers js:babel-core/register",
     "clean": "rimraf dist",
     "start": "node devServer.js",
-    "tunnel": "browser-sync start --proxy 0.0.0.0:7770 --tunnel wesbos"
+    "tunnel": "browser-sync start --proxy 0.0.0.0:7770 --tunnel wesbos",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -52,7 +54,8 @@
     "webpack": "^2.2.0",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-dev-server": "^3.1.11",
-    "webpack-hot-middleware": "^2.10.0"
+    "webpack-hot-middleware": "^2.10.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "expect": "^1.18.0",
@@ -60,5 +63,6 @@
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^15.0.2",
     "html-webpack-plugin": "^2.28.0"
-  }
+  },
+  "snyk": true
 }

@@ -1,11 +1,14 @@
 # React and Redux information
-Playground for learning about React, Redux and family
+* Playground for learning about React, Redux and family
+* Versions: https://reactjs.org/versions
+* Version on 29th March 2020: 16.13.1
+
 
 ## Tutorials
 * https://facebook.github.io/react/tutorial/tutorial.html
 * Pluralsight: Cory House
 * http://cursos.carlosazaustre.es/courses/enrolled/react-js
-
+* Online playgrounds: CodePen, CodeSandbox, Glitch, or Stackblitz.
 
 ## React Fiber
 https://github.com/acdlite/react-fiber-architecture
@@ -35,6 +38,8 @@ https://github.com/acdlite/react-fiber-architecture
 * https://medium.com/wehkamp-techblog/unit-testing-your-react-application-with-jest-and-enzyme-81c5545cee45
 * https://www.genbetadev.com/desarrollo-web/creacion-de-aplicaciones-react-the-agile-way
 * Codesai blog
+* The Coding Stones
+* CodelyTV
 
 ## Other readings
 * Painting with code with React Sketch: http://airbnb.design/painting-with-code/

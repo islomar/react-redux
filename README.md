@@ -21,6 +21,7 @@ https://github.com/acdlite/react-fiber-architecture
 * https://twitter.com/david_bonilla/status/852470041903845377
 * http://andrewhfarmer.com/component-communication/
 * https://facebook.github.io/react/docs/react-component.html#the-component-lifecycle
+* [React Layer Architecture proposal](https://adrianferrera.com/api/resources/CheatSheetArchitecture.png)
 
 ## React specific readings
 * https://facebook.github.io/react/blog/2015/12/18/react-components-elements-and-instances.html
